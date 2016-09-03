@@ -20,7 +20,7 @@ function checkscanpath() {
 
 function scantox() {
     scanimage --device-name "$device" --resolution $resolution -l 0 -t 0 \
--x 210.00 -y 295.00 --format=tiff --batch=$output_file_tmp --verbose
+-x 210.00 -y 295.00 --format=tiff --batch=$output_file_tmp
 }
 
 function convert2() {
