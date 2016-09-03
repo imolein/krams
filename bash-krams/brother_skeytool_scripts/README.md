@@ -8,7 +8,7 @@ These are scripts for the scankey-tool (brscan-skey) from Brother. The scripts p
 * [Scankey Tool](http://support.brother.com/g/s/id/linux/en/instruction_scn3.html?c=us_ot&lang=en&comple=on&redirect=on)
 * sane-utils
 * imagemagick
-* xdg-utils
+* xdg-utils (**BUG:** xdg-email is used to open your mail program and attach the scanned file. Under Ubuntu 14.04 the scanned file is not attached because of a [bug](https://bugs.launchpad.net/xdg-utils/+bug/515386). I tested it with Ubuntu 16.04, where it work's without a problem.)
 
 ## Installation
 * Install and configure the scanner driver first
@@ -21,8 +21,8 @@ These are scripts for the scankey-tool (brscan-skey) from Brother. The scripts p
 * scantoimage.sh scans the page, convert it to jpg and open the path with the file browser
 * scantofile.sh scan the page, convert it to pdf and open the path with the file browser
 * scantomail.sh scan the page, convert it to pdf and open the mail program, where the file is already attached
-** **BUG:** xdg-email is used to open your mail program and attach the scanned file. Under Ubuntu 14.04 the scanned file is not attached because of a [bug](https://bugs.launchpad.net/xdg-utils/+bug/515386). I tested it with Ubuntu 16.04, where it work's without a problem.
 * scantox.sh are the functions, if you want to edit something, do it there
+
 
 I also wrote a [blog article](http://blog.kokolor.es/brothers-brscan-skey-nutzbar-machen/) about it, mainly about the bugs in this package. (in german)
 If someone have a bug or any suggestions, write me.
