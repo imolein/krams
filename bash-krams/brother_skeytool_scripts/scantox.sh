@@ -31,7 +31,7 @@ function convert2() {
             c=$[$c+1]
         done
     elif [[ "$1" == "file" ]]; then
-        convert $scan_path_tmp/* $output_file.pdf
+        convert -compress jpeg $scan_path_tmp/* $output_file.pdf
     fi
 }
 
